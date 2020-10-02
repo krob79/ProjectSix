@@ -1,0 +1,27 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Project Six - Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krob79/ProjectSix.git"
+  },
+  "keywords": [
+    "kyle",
+    "roberts",
+    "project",
+    "six",
+    "portfolio",
+    "treehouse"
+  ],
+  "author": "Kyle Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krob79/ProjectSix/issues"
+  },
+  "homepage": "https://github.com/krob79/ProjectSix#readme"
+}

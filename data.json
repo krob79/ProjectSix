@@ -1,0 +1,49 @@
+{
+    "projects":[
+        {
+            "id":0,
+            "project_name":"Quote Generator Project",
+            "description":"This is my quote generator! Yay!",
+            "technologies":"Regular JavaScript",
+            "live_link":"https://krob79.github.io/ProjectOne/",
+            "github_link":"https://github.com/krob79/ProjectOne.git",
+            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+        },
+        {
+            "id":1,
+            "project_name":"List Pagination and Filtering Project",
+            "description":"My second project using list pagination and filtering!",
+            "technologies":"Regular JavaScript",
+            "live_link":"https://krob79.github.io/ProjectTwo/",
+            "github_link":"https://github.com/krob79/ProjectTwo.git",
+            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+        },
+        {
+            "id":2,
+            "project_name":"Interactive Form Project",
+            "description":"My third project creating interactive forms and validation!",
+            "technologies":"Regular JavaScript, Regular Expressions",
+            "live_link":"https://krob79.github.io/ProjectThree/",
+            "github_link":"https://github.com/krob79/ProjectThree.git",
+            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+        },
+        {
+            "id":3,
+            "project_name":"Phrase Hunter Game",
+            "description":"My fourth project creating a phrase guessing game!",
+            "technologies":"Regular JavaScript focusing on object oriented programming",
+            "live_link":"https://krob79.github.io/ProjectFour/",
+            "github_link":"https://github.com/krob79/ProjectFour.git",
+            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+        },
+        {
+            "id":4,
+            "project_name":"Public API Requests Project",
+            "description":"My fifth project using API requests!",
+            "technologies":"Regular JavaScript",
+            "live_link":"https://krob79.github.io/ProjectFive/",
+            "github_link":"https://github.com/krob79/ProjectFive.git",
+            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+        }
+    ]
+}
