@@ -9,19 +9,22 @@ var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
 
+// Global error handler
+/* Global error handler */
+app.use((err, req, res, next) => {
+
+    if (err) {
+      console.log('Global error handler called', err);
+    }
+      if(err.status === 404){
+         res.status(404).render('page-not-found', {message: err.message});
+      } else {
+          err.message = err.message || `Oops! It looks like something went wrong on the server`;
+          res.status(err.status || 500).render(`error`, {message: err.message});
+      }
+  });
+
 app.listen(3000, () => {
     console.log("The application is running! Yee haw!");
-});
-
-app.get('/about', (req, res, next) => {
-    res.render('about');
-});
-
-// error handler
-app.use(function(err, req, res, next) {
-    res.locals.message = err.message;
-    res.locals.error = err;
-    res.status(err.status || 500);
-    res.render('error');
 });
   

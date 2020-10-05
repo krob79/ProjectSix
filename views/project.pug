@@ -11,8 +11,7 @@ block content
         h1= project.project_name
 
         //- Use interpolation to dynamically add the project description.
-        p.lead.text-light
-          | Description
+        p.lead.text-light= project.description
 
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6= project.technologies
