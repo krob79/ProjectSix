@@ -8,6 +8,11 @@ app.use('/static', express.static('public'));
 var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
+app.use((req, res, next) => {
+    console.log("MIDDLEWARE");
+    next();
+});
+
 
 // Global error handler
 /* Global error handler */
@@ -25,6 +30,6 @@ app.use((err, req, res, next) => {
   });
 
 app.listen(3000, () => {
-    console.log("The application is running! Yee haw!");
+    console.log("The application is running! Yay!");
 });
   

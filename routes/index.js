@@ -3,10 +3,18 @@ const router = express.Router();
 const { projects } = require('../data.json');
 const { gsap } = require('gsap');
 
+router.use('[\/]',(req, res, next) => {
+    console.log("MIDDLEWARE FOR ROOT ONLY");
+    next();
+});
 /* GET home page. */
 router.get('/', function(req, res, next) {
-      res.render('index', {projects});
-  });
+      res.render('index', {projects}, (err, html) => {
+        console.log("I AM AT ROOT sending html");
+        res.send(html);
+      });
+});
+
 
 router.get('/about', (req, res, next) => {
     res.render('about');
