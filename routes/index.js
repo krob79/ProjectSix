@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const { projects } = require('../data.json');
-const { gsap } = require('gsap');
-const {fadeIn} = require('../public/js/animation');
 
 router.use('[\/]',(req, res, next) => {
     console.log("MIDDLEWARE FOR ROOT ONLY");
@@ -13,8 +11,6 @@ router.get('/', function(req, res, next) {
         console.log('RENDERING INDEX');
       res.render('index', {projects});
 });
-
-
 
 router.get('/about', (req, res, next) => {
     res.render('about');
