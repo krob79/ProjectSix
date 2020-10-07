@@ -7,7 +7,7 @@
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectOne/",
             "github_link":"https://github.com/krob79/ProjectOne.git",
-            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+            "image_urls":["/static/img/p1_thumb.jpg", ["/static/img/p1_thumb_wide1.jpg", "/static/img/p1_thumb_wide2.jpg", "/static/img/p1_thumb_wide3.jpg"]]
         },
         {
             "id":1,
@@ -16,7 +16,7 @@
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectTwo/",
             "github_link":"https://github.com/krob79/ProjectTwo.git",
-            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+            "image_urls":["/static/img/p2_thumb.jpg", ["/static/img/p2_thumb_wide1.jpg", "/static/img/p2_thumb_wide2.jpg"]]
         },
         {
             "id":2,
@@ -25,7 +25,7 @@
             "technologies":"Regular JavaScript, Regular Expressions",
             "live_link":"https://krob79.github.io/ProjectThree/",
             "github_link":"https://github.com/krob79/ProjectThree.git",
-            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+            "image_urls":["/static/img/p3_thumb.jpg", ["/static/img/p3_thumb_wide1.jpg", "/static/img/p3_thumb_wide2.jpg", "/static/img/p3_thumb_wide3.jpg"]]
         },
         {
             "id":3,
@@ -34,7 +34,7 @@
             "technologies":"Regular JavaScript focusing on object oriented programming",
             "live_link":"https://krob79.github.io/ProjectFour/",
             "github_link":"https://github.com/krob79/ProjectFour.git",
-            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+            "image_urls":["/static/img/p4_thumb.jpg", ["/static/img/p4_thumb_wide1.jpg", "/static/img/p4_thumb_wide2.jpg", "/static/img/p4_thumb_wide3.jpg"]]
         },
         {
             "id":4,
@@ -43,7 +43,7 @@
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectFive/",
             "github_link":"https://github.com/krob79/ProjectFive.git",
-            "image_urls":["imagepath1.jpg", "imagepath2.jpg"]
+            "image_urls":["/static/img/p5_thumb.jpg", ["/static/img/p5_thumb_wide1.jpg", "/static/img/p5_thumb_wide2.jpg", "/static/img/p5_thumb_wide3.jpg"]]
         }
     ]
 }
