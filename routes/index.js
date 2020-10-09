@@ -1,16 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const { projects } = require('../data.json');
-const { fadeOut } = require('../public/js/animation');
 
-router.use('[\/]',(req, res, next) => {
-    console.log("MIDDLEWARE FOR ROOT ONLY");
-    next();
-});
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-      console.log('RENDERING INDEX');
-      fadeOut();
       res.render('index', {projects});
 });
 
@@ -27,14 +21,14 @@ router.get('/projects?/', (req, res, next) => {
 router.get('/projects?/:id', function(req, res, next) {
   const projectId = req.params.id;
   const project = projects.find( ({ id }) => id === +projectId );
-  console.log(`This is the project: ${project}`);
 
   if (project) {
     const thumbs = project.image_urls[1];
     return res.render('project', { project, thumbs });
   } else {
-    const err = new Error(`Project ${projectId} doesn't exist! Not yet, anyway...`);
-    res.render('error', {message: err.message});
+    const err = new Error();
+    err.status = 404;
+    res.render('error', {message: `${err.status}. Project '${projectId}' doesn't exist! Not yet, anyway...`});
   }
 });
 
