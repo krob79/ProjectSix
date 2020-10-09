@@ -5,7 +5,6 @@ block content
     div
       h1 Kyle's Portfolio
 
-      //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
       p.lead.text-light
         | Welcome! This is currently a collection of my Treehouse Projects.
   article.grid-container.portfolio-index
@@ -17,4 +16,5 @@ block content
           a(href=`/projects/${project.id}`)
             img.thumbnail(src=project.image_urls[0])
             h5= project.project_name
+
       

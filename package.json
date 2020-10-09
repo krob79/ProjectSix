@@ -26,5 +26,6 @@
   },
   "homepage": "https://github.com/krob79/ProjectSix#readme",
   "dependencies": {
+    "gsap": "^3.5.1"
   }
 }

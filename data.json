@@ -3,7 +3,7 @@
         {
             "id":0,
             "project_name":"Quote Generator Project",
-            "description":"This is my quote generator! Yay!",
+            "description":"This project demonstrates knowledge of basic JavaScript syntax and data structures by building a Random Quote Generator, a program that displays a randomly selected quote each time the user clicks a button.",
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectOne/",
             "github_link":"https://github.com/krob79/ProjectOne.git",
@@ -12,7 +12,7 @@
         {
             "id":1,
             "project_name":"List Pagination and Filtering Project",
-            "description":"My second project using list pagination and filtering!",
+            "description":"This project shows how to break up long lists of items into smaller lists and provide navigation to the other lists. JavaScript was used to divide a long list into a series of 'pages' and improve the user experience of a web page. Filtering and choosing number of items per page were also added.",
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectTwo/",
             "github_link":"https://github.com/krob79/ProjectTwo.git",
@@ -21,7 +21,7 @@
         {
             "id":2,
             "project_name":"Interactive Form Project",
-            "description":"My third project creating interactive forms and validation!",
+            "description":"In this project, the focus was on creating interactive forms and form validation. Form fields would display only if certain menu options were chosen and Regular Expressions were used to check if email addresses and other information was filled out correctly.",
             "technologies":"Regular JavaScript, Regular Expressions",
             "live_link":"https://krob79.github.io/ProjectThree/",
             "github_link":"https://github.com/krob79/ProjectThree.git",
@@ -30,7 +30,7 @@
         {
             "id":3,
             "project_name":"Phrase Hunter Game",
-            "description":"My fourth project creating a phrase guessing game!",
+            "description":"The goal of this project was to create a browser-based, word guessing game: 'Phrase Hunter.' JavaScript and Object-Oriented Programming were used to select a random, hidden phrase. A player tries to guess the phrase by selecting individual letters from an onscreen keyboard. For fun, I added a timer and displayed a hint once the timer reached the halfway mark.",
             "technologies":"Regular JavaScript focusing on object oriented programming",
             "live_link":"https://krob79.github.io/ProjectFour/",
             "github_link":"https://github.com/krob79/ProjectFour.git",
@@ -39,7 +39,7 @@
         {
             "id":4,
             "project_name":"Public API Requests Project",
-            "description":"My fifth project using API requests!",
+            "description":"In this project, I created an employee directory by communicating with a third-party API from https://randomuser.me/.",
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectFive/",
             "github_link":"https://github.com/krob79/ProjectFive.git",

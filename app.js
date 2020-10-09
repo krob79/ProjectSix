@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = 3000;
 
 app.set('view engine', 'pug');
 
@@ -8,13 +9,6 @@ app.use('/static', express.static('public'));
 var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
-app.use((req, res, next) => {
-    console.log("MIDDLEWARE");
-    next();
-});
-
-
-// Global error handler
 /* Global error handler */
 app.use((err, req, res, next) => {
 
@@ -29,7 +23,10 @@ app.use((err, req, res, next) => {
       }
   });
 
-app.listen(3000, () => {
-    console.log("The application is running! Yay!");
+app.listen(port, () => {
+    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    console.log(`     PROJECT SIX IS RUNNING!`); //http://localhost:3000/
+    console.log(`     http://localhost:${port}/`);
+    console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 });
   

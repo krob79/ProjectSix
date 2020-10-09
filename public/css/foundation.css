@@ -36,7 +36,8 @@ html {
      * Remove the margin in all browsers (opinionated).
      */
 body {
-  margin: 0; }
+  margin: 0; 
+  background-color: red;}
 
 /**
      * Add the correct display in IE 9-.
