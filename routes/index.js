@@ -28,6 +28,7 @@ router.get('/projects?/:id', function(req, res, next) {
   } else {
     const err = new Error();
     err.status = 404;
+    console.log(`ERROR: ${err.status}. Project '${projectId}' doesn't exist! Not yet, anyway...`);
     res.render('error', {message: `${err.status}. Project '${projectId}' doesn't exist! Not yet, anyway...`});
   }
 });
@@ -36,6 +37,7 @@ router.get('/:page', function(req, res, next) {
     const pageName = req.params.page;
     const err = new Error();
     err.status = 404;
+    console.log(`ERROR: ${err.status}. It looks like the page you typed in (${pageName}) doesn't exist.`);
     res.render('page-not-found', {message: `${err.status}. It looks like the page you typed in (${pageName}) doesn't exist.`});
   });
 

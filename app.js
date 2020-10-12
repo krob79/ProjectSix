@@ -19,6 +19,7 @@ app.use((err, req, res, next) => {
          res.status(404).render('page-not-found', {message: err.message});
       } else {
           err.message = err.message || `Oops! It looks like something went wrong on the server`;
+          console.log(`ERROR: ${err.message}`);
           res.status(err.status || 500).render(`error`, {message: err.message});
       }
   });
