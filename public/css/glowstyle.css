@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width:100%;
+    height: 100%;
+    background: black;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    gap: 120px;
+}
+
+.kshape{
+    color: #fff;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+    /* fill: none; */
+    stroke: #b5b5b6;
+    filter: url(#red-glow);
+    stroke-miterlimit: 1;
+}
+.rshape{
+    /* fill: #b5b5b6; */
+    fill: white;
+    filter: url(#red-glow);
+    /* filter: hue-rotate(90deg); 90deg rotation */
+}
+
+
+
+#logo {
+    position: absolute;
+    top: 100px;
+    left: 102px;
+    margin: auto;
+    width: 10%;
+    padding: 5px 5px 30px 5px;
+    /* animation: animate 4s linear infinite; */
+    
+    /* margin-left: 30%; */
+}
+
+#newlogo {
+    font-size: 100px;
+    color: #fff;
+    animation: animate 10s linear infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes animate {
+    from {
+        filter:hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}

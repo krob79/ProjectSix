@@ -34,7 +34,7 @@
             "technologies":"Regular JavaScript focusing on object oriented programming",
             "live_link":"https://krob79.github.io/ProjectFour/",
             "github_link":"https://github.com/krob79/ProjectFour.git",
-            "image_urls":["/static/img/p4_thumb.jpg", ["/static/img/p4_thumb_wide1.jpg", "/static/img/p4_thumb_wide2.jpg", "/static/img/p4_thumb_wide3.jpg"]]
+            "image_urls":["/static/img/p4_thumb.jpg", ["/static/img/p4_thumb.gif","/static/img/p4_thumb_wide1.jpg", "/static/img/p4_thumb_wide2.jpg", "/static/img/p4_thumb_wide3.jpg"]]
         },
         {
             "id":4,

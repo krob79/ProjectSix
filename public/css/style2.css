@@ -1,0 +1,56 @@
+
+
+.kshape{
+    color: #fff;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+    fill: none;
+    stroke: #b5b5b6;
+    filter: url(#red-glow);
+    stroke-miterlimit: 1;
+}
+.rshape{
+    /* fill: #b5b5b6; */
+    fill: white;
+    filter: url(#red-glow);
+    /* filter: hue-rotate(90deg); 90deg rotation */
+}
+
+#logo{
+    animation: animate 10s linear infinite;
+    animation-delay: 0.3s;
+}
+
+#newlogo {
+    font-size: 100px;
+    color: #fff;
+    
+}
+
+.button.expanded{
+    color:yellow;
+    animation: animate 10s linear infinite;
+
+}
+
+.portfolio-breadcrumb {
+    background-color: #333;
+}
+
+.portfolio-breadcrumb a {
+    color: yellow;
+    animation: animate 10s linear infinite;
+}
+
+.portfolio-me a {
+    color: yellow;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        filter:hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}

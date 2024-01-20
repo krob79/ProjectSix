@@ -8,6 +8,8 @@ html(class="no-js" lang="en" dir="ltr")
     link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap', rel='stylesheet')
     link(rel='stylesheet', href='/static/css/foundation.css')
     link(rel='stylesheet', href='/static/css/style.css')
+    link(rel='stylesheet', href='/static/css/style2.css')
+    
   body
     
     #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
@@ -15,12 +17,37 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            #logo
-              svg#newlogo(data-name="Layer 12" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 152.72 268.13")
-                title logo
-                polygon(points="0.5 0.58 0.5 267.56 36.43 267.42 36.3 180.84 75.38 210.9 74.95 267.32 112.97 267.32 113.32 191.53 36.54 134.1 112.87 77.92 112.87 38.78 74.71 38.78 74.71 57.84 37.54 87.47 37.54 0.5 0.5 0.58" style="fill:none;stroke:#b5b5b6;stroke-miterlimit:10")
-                polygon(points="75.14 267.28 75.58 210.86 36.3 180.84 36.43 267.42 75.14 267.28" style="fill:#b5b5b6")
-                polygon(points="152.72 268.13 151.78 172.31 94.39 134.12 151.78 96.05 151.78 0.44 37.55 0.46 37.55 87.42 74.72 57.8 74.72 38.74 112.88 38.74 112.87 77.88 36.55 134.06 113.33 191.49 112.98 267.28 152.72 268.13" style="fill:#b5b5b6")
+            .wrapper
+              #logo
+                svg#newlogo(data-name='Layer 12' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 200 350' color-interpolation-filters='sRGB')
+                  defs
+                    filter#red-glow(filterunits='userSpaceOnUse' x='-50%' y='-50%' width='200%' height='200%')
+                      // blur the text at different levels
+                      fegaussianblur(in='SourceGraphic' stddeviation='5' result='blur5')
+                      fegaussianblur(in='SourceGraphic' stddeviation='10' result='blur10')
+                      fegaussianblur(in='SourceGraphic' stddeviation='20' result='blur20')
+                      fegaussianblur(in='SourceGraphic' stddeviation='30' result='blur30')
+                      fegaussianblur(in='SourceGraphic' stddeviation='50' result='blur50')
+                      // merge all the blurs except for the first one
+                      femerge(result='blur-merged')
+                        femergenode(in='blur10')
+                        femergenode(in='blur20')
+                        femergenode(in='blur30')
+                        femergenode(in='blur50')
+                      // recolour the merged blurs red
+                      fecolormatrix(result='red-blur' in='blur-merged' type='matrix' values='1 0 0 0 0\
+                      0 0.06 0 0 0\
+                      0 0 0.44 0 0\
+                      0 0 0 1 0')
+                      femerge
+                        femergenode(in='red-blur')
+                        // largest blurs coloured red
+                        femergenode(in='blur5')
+                        // smallest blur left white
+                        femergenode(in='SourceGraphic')
+                      // original white text
+                  polygon.kshape(points='4.6,7.7,4.8,340.6,52.2,340.6,52.3,233.8,76,251.5,99.7,269.2,99.5,340.5,147.3,340.6,147.4,245.6,52.8,174,100.1,138.3,147.5,102.6,147.6,55.5,99.9,55.5,99.7,79,70,101.3,52.4,114.7,52.4,7.7,4.6,7.7')
+                  polygon.rshape(points='52.4,7.9,52.4,114.2,99.8,79,99.5,55.2,147.2,55.1,147.4,102.5,99.8,138.4,52.4,174,147.4,245.8,147.5,340.6,194.9,340.4,194.9,221.7,133.2,176.9,194.8,126.7,195,7.8,52.4,7.9,52.1,233.4,52.4,340.6,99.9,340.4,99.8,269.4,52.1,233.4')
 
             img.thumbnail(src='/static/img/linkedIn_profilePic.jpg')
           .cell.auto
