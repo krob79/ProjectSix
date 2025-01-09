@@ -21,6 +21,11 @@ block content
 
         a.button.expanded(href=`${project.live_link}`) Live Demo
         a.button.expanded(href=`${project.github_link}`) GitHub Repo
+
+    video.videoThumb(autoplay="true" loop muted playsinline)
+        source(src=`${project.video_source}.mp4` type='video/mp4')
+        source(src=`${project.video_source}.ogg` type='video/ogg')
+        |    Your browser does not support the video tag.
     
-    each thumb in thumbs
-      img.image(src=thumb)
+    //- each thumb in thumbs
+    //-   img.image(src=thumb)

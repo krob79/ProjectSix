@@ -7,7 +7,8 @@
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectOne/",
             "github_link":"https://github.com/krob79/ProjectOne.git",
-            "image_urls":["/static/img/p1_thumb.jpg", ["/static/img/p1_thumb_wide1.jpg", "/static/img/p1_thumb_wide2.jpg", "/static/img/p1_thumb_wide3.jpg"]]
+            "video_source": "/static/img/p1_thumb",
+            "image_urls":["/static/img/p1_thumb.jpg"]
         },
         {
             "id":1,
@@ -16,7 +17,8 @@
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectTwo/",
             "github_link":"https://github.com/krob79/ProjectTwo.git",
-            "image_urls":["/static/img/p2_thumb.jpg", ["/static/img/p2_thumb_wide1.jpg", "/static/img/p2_thumb_wide2.jpg"]]
+            "video_source": "/static/img/p2_thumb",
+            "image_urls":["/static/img/p2_thumb.jpg"]
         },
         {
             "id":2,
@@ -25,7 +27,8 @@
             "technologies":"Regular JavaScript, Regular Expressions",
             "live_link":"https://krob79.github.io/ProjectThree/",
             "github_link":"https://github.com/krob79/ProjectThree.git",
-            "image_urls":["/static/img/p3_thumb.jpg", ["/static/img/p3_thumb_wide1.jpg", "/static/img/p3_thumb_wide2.jpg", "/static/img/p3_thumb_wide3.jpg"]]
+            "video_source": "/static/img/p3_thumb",
+            "image_urls":["/static/img/p3_thumb.jpg"]
         },
         {
             "id":3,
@@ -34,7 +37,8 @@
             "technologies":"Regular JavaScript focusing on object oriented programming",
             "live_link":"https://krob79.github.io/ProjectFour/",
             "github_link":"https://github.com/krob79/ProjectFour.git",
-            "image_urls":["/static/img/p4_thumb.jpg", ["/static/img/p4_thumb.gif","/static/img/p4_thumb_wide1.jpg", "/static/img/p4_thumb_wide2.jpg", "/static/img/p4_thumb_wide3.jpg"]]
+            "video_source": "/static/img/p4_thumb",
+            "image_urls":["/static/img/p4_thumb.jpg"]
         },
         {
             "id":4,
@@ -43,7 +47,28 @@
             "technologies":"Regular JavaScript",
             "live_link":"https://krob79.github.io/ProjectFive/",
             "github_link":"https://github.com/krob79/ProjectFive.git",
-            "image_urls":["/static/img/p5_thumb.jpg", ["/static/img/p5_thumb_wide1.jpg", "/static/img/p5_thumb_wide2.jpg", "/static/img/p5_thumb_wide3.jpg"]]
+            "video_source": "/static/img/p5_thumb",
+            "image_urls":["/static/img/p5_thumb.jpg"]
+        },
+        {
+            "id":7,
+            "project_name":"SQL Library Manager Project",
+            "description":"In this project, I created a library directory using Pug for the HTML templating. The Sequelize JavaScript library is used to manage the CRUD operations for the SQL entries.",
+            "technologies":"JavaScript, CSS, Pug, Sequelize for managing the SQL",
+            "live_link":"https://project8v2-production.up.railway.app/books",
+            "github_link":"https://github.com/krob79/Project8_v2.git",
+            "video_source": "/static/img/p8_thumb",
+            "image_urls":["/static/img/p8_thumb.png"]
+        },
+        {
+            "id":9,
+            "project_name":"Full Stack Course Catalog Project",
+            "description":"In this project, I used Sequelize to create data models for users and courses and populated a database. ExpressJS was used to build an API that performed CRU operations in the database. React served as the front end that tapped into the API.",
+            "technologies":"ReactJS, ExpressJS, CSS, Sequelize",
+            "live_link":"https://attractive-playfulness-production.up.railway.app/",
+            "github_link":"https://github.com/krob79/ProjectTen.git",
+            "video_source": "/static/img/p10_thumb",
+            "image_urls":["/static/img/p10_thumb.png"]
         }
     ]
 }

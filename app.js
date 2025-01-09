@@ -6,8 +6,12 @@ app.set('view engine', 'pug');
 
 app.use('/static', express.static('public'));
 
+
+
 var indexRouter = require('./routes/index');
+
 app.use('/', indexRouter);
+
 
 /* Global error handler */
 app.use((err, req, res, next) => {
