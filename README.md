@@ -4,6 +4,8 @@ In this project, I built a mini-portfolio that houses all of the TreeHouse cours
 Each entry has a link preview as well as a link back to it's GitHub Repo.
 URL Routes were setup with ExpressJS and the page templates were created with Pug.
 
+[View Project](https://krob79.github.io/ProjectSix/)
+
 
 ## Languages & Tools Used
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=blue&style=flat-square)
