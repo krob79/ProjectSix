@@ -2,7 +2,7 @@
 
 In this project, I built a mini-portfolio that houses all of the TreeHouse coursework. 
 Each entry has a link preview as well as a link back to it's GitHub Repo.
-Built with ExpressJS and Pug.
+URL Routes were setup with ExpressJS and the page templates were created with Pug.
 
 
 ## Languages & Tools Used
