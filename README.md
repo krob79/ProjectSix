@@ -15,6 +15,7 @@ URL Routes were setup with ExpressJS and the page templates were created with Pu
 ![ExpressJS](https://img.shields.io/badge/-ExpressJS-white?logo=express&logoColor=black)
 ![Pug](https://img.shields.io/badge/-Pug-a86454?logo=pug&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/-NodeJS-007E38?logo=nodedotjs&logoColor=white)
+![Heroku](https://img.shields.io/badge/-Heroku-5A1BA9?logo=heroku&logoColor=white)
 
 
 ![VSCode](https://img.shields.io/badge/-VSCode-007ACC?logo=visual-studio-code&logoColor=white&style=flat-square)
