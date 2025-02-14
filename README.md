@@ -4,7 +4,7 @@ In this project, I built a mini-portfolio that houses all of the TreeHouse cours
 Each entry has a link preview as well as a link back to it's GitHub Repo.
 URL Routes were setup with ExpressJS and the page templates were created with Pug.
 
-[View Project](https://krob79.github.io/ProjectSix/)
+[View Project](https://krsite-app-cde16597d7c3.herokuapp.com/)
 
 
 ## Languages & Tools Used
